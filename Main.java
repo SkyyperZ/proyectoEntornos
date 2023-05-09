@@ -30,15 +30,9 @@ public class Main {
                     case3();
                 }
                 case 4 -> {
-                    System.out.println("=== Listado de productos ===");
-                    for (int index = 0; index < productos.size(); index++) {
-                        Producto productoAMostrar = productos.get(index);
-                        System.out.println(index + ". " + productoAMostrar.getNombre() + " - $" + productoAMostrar.getPrecio());
-                    }
-
-                    System.out.println("============================");
+                    case4();
                 }
-                case 5 -> System.out.println("¡Hasta luego!");
+                case 5 -> case5();
                 default -> System.out.println("Opción no válida");
             }
         } while (opcion != 5);
@@ -131,6 +125,9 @@ public class Main {
         }
     }
 
+    /**
+     * Creamos metodo 4
+     */
     private static void case4() {
         System.out.println("=== Listado de productos ===");
         for (int index = 0; index < productos.size(); index++) {
@@ -141,6 +138,10 @@ public class Main {
         System.out.println("============================");
     }
 
+
+    /**
+     * Creamos método 5
+     */
     private static void case5() {
         System.out.println("¡Hasta luego!");
     }
